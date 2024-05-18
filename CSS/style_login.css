@@ -1,0 +1,278 @@
+/* All */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #F0EFEA;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header{
+    background-image: linear-gradient(to right, rgb(192, 0, 0), red);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+}
+
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav a{
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.nav a:link{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav a:hover{
+    color: #000;
+}
+
+.nav a:active{
+    color: #FFF;
+}
+
+.nav a:visited{
+    color: #FFF;
+}
+
+.nav a:visited:hover{
+    color: #000;
+}
+
+.header-login-icons{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.header-login-icons a{
+    color: #FFF;
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.header-login-icons a:link{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header-login-icons a:hover{
+    color: black;
+}
+
+/* Forms */
+.login-form{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+
+.login-form form{
+    border-width: 4px;
+    border-style: solid;
+    background-color: #FFF;
+    border-color: rgb(201, 201, 201);
+    border-radius: 6px;
+    text-align: left;
+    display: grid;
+}
+
+.lbl_user{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.lbl_user label{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.ipt_user{
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+.ipt_user input{
+    padding-top: 7px;
+    padding-left: 3px;
+    padding-bottom: 7px;
+    width: 100%;
+    align-items: center;
+}
+
+.lbl_pwd{
+    padding-left: 50px;
+}
+
+.lbl_pwd label{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.ipt_pwd{
+    padding-left: 50px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+}
+
+.ipt_pwd input{
+    padding-top: 7px;
+    padding-left: 3px;
+    padding-bottom: 7px;
+    width: 100%;
+    align-items: center;
+}
+
+.btn_entrar{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+.btn_entrar button{
+    cursor: pointer;
+    outline: revert;
+    height: 45px;
+    width: 100%;
+    background-color: #0EB700;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.btn_entrar button:hover{
+    background-color: #0B9200;
+}
+
+.esq_senha{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.esq_senha a{
+    color: #2f00c9;
+}
+
+.esq_senha a:hover{
+    text-decoration: underline;
+}
+
+.linha_01{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn_ajuda{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn_ajuda button{
+    cursor: pointer;
+    outline: revert;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0047D5;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.btn_ajuda button:hover{
+    background-color: #002F8E;
+}
+
+/* Logo CPS */
+.logo-cps img{
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    bottom: 10px;
+    right: 20px;
+}
+
+/* Fim Pág */
+
+#Contato {
+    position: relative;
+    display: grid;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 8rem;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+    color: #000000;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}

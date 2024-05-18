@@ -1,0 +1,33 @@
+*{
+    font-family: "Helvetica",	"Lucida	Grande",	sans-serif;
+    box-sizing: border-box;
+}
+
+.user-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+button {
+    width: 5%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #7e0000;
+}
+
+.user-img img{
+    width: 200px;
+    height: 200px;
+}
