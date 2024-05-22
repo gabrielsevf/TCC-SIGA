@@ -9,6 +9,15 @@
     transition: all .5s ease;
 }
 
+:root{
+    --bg-color: var(--bg-color) #F0EFEA;
+    --text-color: #000;
+    --main-color: #FF0000;
+    --other-color: #1C1C1C;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
 body{
     background-color: #F0EFEA;
 }
@@ -185,22 +194,23 @@ header{
     padding-right: 50px;
 }
 
-.btn_entrar button{
+.btn_entrar input{
     cursor: pointer;
     outline: revert;
     height: 45px;
     width: 100%;
-    background-color: #0EB700;
+    background-color: #0da000;
     font-size: 22px;
     font-weight: bolder;
+    line-height: 45px;
     color: #fff;
     border: solid 1px;
     border-radius: 5px;
     transition: all .5s ease;
 }
 
-.btn_entrar button:hover{
-    background-color: #0B9200;
+.btn_entrar input:hover{
+    background-color: #0a7500;
 }
 
 .esq_senha{
@@ -231,7 +241,7 @@ header{
     margin-right: auto;
 }
 
-.btn_ajuda button{
+.btn_ajuda input{
     cursor: pointer;
     outline: revert;
     padding-top: 10px;
@@ -245,7 +255,7 @@ header{
     transition: all .5s ease;
 }
 
-.btn_ajuda button:hover{
+.btn_ajuda input:hover{
     background-color: #002F8E;
 }
 
