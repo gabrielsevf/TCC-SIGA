@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    transition: all .5s ease;
 }
 
 body{
@@ -45,9 +46,9 @@ header{
 }
 
 .nav a{
-    font-weight: 500;
     margin: 0 30px;
-    transition: a .55s ease;
+    font-weight: bold;
+    transition: all .5s ease;
 }
 
 .nav a:link{
@@ -81,18 +82,32 @@ header{
 
 .header-login-icons a{
     color: #FFF;
-    font-weight: 500;
-    margin: 0 30px;
-    transition: a .55s ease;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding-right: 3px;
 }
 
 .header-login-icons a:link{
     text-decoration: none;
-    color: #FFF;
+    color: #FFF;    
 }
 
 .header-login-icons a:hover{
-    color: black;
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.header-login-icons a:active{
+    color: #FFF;
+}
+
+.header-login-icons a:visited{
+    color: #FFF;
+}
+
+.header-login-icons a:visited:hover{
+    color: #000;
 }
 
 /* Forms */
@@ -112,7 +127,7 @@ header{
     border-style: solid;
     background-color: #FFF;
     border-color: rgb(201, 201, 201);
-    border-radius: 6px;
+    border-radius: 10px;
     text-align: left;
     display: grid;
 }
@@ -181,6 +196,7 @@ header{
     color: #fff;
     border: solid 1px;
     border-radius: 5px;
+    transition: all .5s ease;
 }
 
 .btn_entrar button:hover{
@@ -226,6 +242,7 @@ header{
     color: #fff;
     border: solid 1px;
     border-radius: 5px;
+    transition: all .5s ease;
 }
 
 .btn_ajuda button:hover{
@@ -249,7 +266,7 @@ header{
     gap: 5rem;
     justify-content: space-around;
     background-color: #ffffff;
-    padding: 8rem;
+    padding: 5rem;
     margin-top: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
@@ -278,21 +295,75 @@ header{
     transition: all .35s ease;
 }
 
+.separacao-contato hr{
+    width: 1px;
+    height: 300px;
+}
+
 .icons{
     display: flex;
 }
 
-.social_face a{
-    color: blue;
-    padding-right: 5px;
+.social_face{
+    padding-top: 3px;
+    padding-right: 10px;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
 }
 
-.social_insta a{
-    color: rgb(212, 0, 212);
-    padding-right: 5px;
+.social_face:hover{
+    transform: translateY(-5px);
 }
 
-.social_twitter a{
-    color: rgb(0, 162, 255);
-    padding-right: 5px;
+.social_insta{
+    padding-top: 3px;
+    padding-right: 10px;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.social_insta:hover{
+    transform: translateY(-5px);
+}
+
+.social_twitter{
+    padding-top: 3px;
+    padding-right: 10px;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.social_twitter:hover{
+    transform: translateY(-5px);
+}
+
+.vesti-etec a:hover{
+    color: red;
+}
+
+.vesti-fatec a:hover{
+    color: rgb(0, 110, 255);
+}
+
+.web-sai a:hover{
+    color: rgb(255, 123, 0);
+}
+
+.inova-cps a:hover{
+    color: rgb(0, 255, 136);
+}
+
+.email-insti a:hover{
+    color: rgb(17, 0, 255);
+}
+
+.email a:hover{
+    color: rgb(255, 0, 149);
+}
+
+.suporte a:hover{
+    color: indigo;
 }
