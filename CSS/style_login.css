@@ -263,6 +263,7 @@ header{
 .meio-contato h5 {
     font-size: 15px;
     font-weight: 600;
+    padding-bottom: 5px;
     color: #555;
 }
 
@@ -275,4 +276,23 @@ header{
     color: #555;
     font-weight: 600;
     transition: all .35s ease;
+}
+
+.icons{
+    display: flex;
+}
+
+.social_face a{
+    color: blue;
+    padding-right: 5px;
+}
+
+.social_insta a{
+    color: rgb(212, 0, 212);
+    padding-right: 5px;
+}
+
+.social_twitter a{
+    color: rgb(0, 162, 255);
+    padding-right: 5px;
 }
