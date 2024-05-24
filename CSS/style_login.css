@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    transition: all .5s ease;
 }
 
 :root{
@@ -316,40 +315,20 @@ header{
     display: flex;
 }
 
-.social_face{
-    padding-top: 3px;
-    padding-right: 10px;
-    transition: all.55s ease;
+.social_icon a{
+    padding-right: 1rem;
     cursor: pointer;
     display: inline-flex;
+    font-size: 36px;
+    color: #000;
+    transition: all .5s ease;
 }
 
-.social_face:hover{
+.social_icon a:hover{
     transform: translateY(-5px);
-}
-
-.social_insta{
-    padding-top: 3px;
-    padding-right: 10px;
-    transition: all.55s ease;
-    cursor: pointer;
-    display: inline-flex;
-}
-
-.social_insta:hover{
-    transform: translateY(-5px);
-}
-
-.social_twitter{
-    padding-top: 3px;
-    padding-right: 10px;
-    transition: all.55s ease;
-    cursor: pointer;
-    display: inline-flex;
-}
-
-.social_twitter:hover{
-    transform: translateY(-5px);
+    transition: all .5s ease;
+    font-size: 48px;
+    transition: all .5s ease;
 }
 
 .vesti-etec a:hover{
