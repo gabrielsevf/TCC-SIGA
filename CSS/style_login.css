@@ -1,6 +1,6 @@
 /* All */
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ html{
 
 /* Header */
 header{
-    background-image: linear-gradient(to right, rgb(192, 0, 0), red);
+    background-image: linear-gradient(to right, rgb(143, 0, 0), rgb(173, 0, 0));
     position: fixed;
     top: 0;
     right: 0;
@@ -45,9 +45,9 @@ header{
 }
 
 .nav a{
-    font-weight: 500;
     margin: 0 30px;
-    transition: a .55s ease;
+    font-weight: bold;
+    transition: all .5s ease;
 }
 
 .nav a:link{
@@ -57,6 +57,7 @@ header{
 
 .nav a:hover{
     color: #000;
+    transition: all .5s ease;
 }
 
 .nav a:active{
@@ -69,9 +70,10 @@ header{
 
 .nav a:visited:hover{
     color: #000;
+    transition: all .5s ease;
 }
 
-.header-login-icons{
+.header-login{
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -79,20 +81,36 @@ header{
     align-items: center;
 }
 
-.header-login-icons a{
+.header-login a{
     color: #FFF;
-    font-weight: 500;
-    margin: 0 30px;
-    transition: a .55s ease;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding-right: 3px;
+    transition: all .5s ease;
 }
 
-.header-login-icons a:link{
+.header-login a:link{
     text-decoration: none;
+    color: #FFF;    
+}
+
+.header-login a:hover{
+    color: #000;
+    transition: all .5s ease;
+}
+
+.header-login a:active{
     color: #FFF;
 }
 
-.header-login-icons a:hover{
-    color: black;
+.header-login a:visited{
+    color: #FFF;
+}
+
+.header-login a:visited:hover{
+    color: #000;
+    transition: all .5s ease;
 }
 
 /* Forms */
@@ -112,7 +130,7 @@ header{
     border-style: solid;
     background-color: #FFF;
     border-color: rgb(201, 201, 201);
-    border-radius: 6px;
+    border-radius: 10px;
     text-align: left;
     display: grid;
 }
@@ -170,21 +188,26 @@ header{
     padding-right: 50px;
 }
 
-.btn_entrar button{
+.btn_entrar input{
     cursor: pointer;
     outline: revert;
     height: 45px;
     width: 100%;
-    background-color: #0EB700;
+    background-color: #0da000;
     font-size: 22px;
     font-weight: bolder;
+    line-height: 45px;
+    text-align: center;
+    align-items: center;
     color: #fff;
     border: solid 1px;
     border-radius: 5px;
+    transition: all .5s ease;
 }
 
-.btn_entrar button:hover{
-    background-color: #0B9200;
+.btn_entrar input:hover{
+    background-color: #0a7500;
+    transition: all .5s ease;
 }
 
 .esq_senha{
@@ -195,10 +218,12 @@ header{
 
 .esq_senha a{
     color: #2f00c9;
+    transition: all .5s ease;
 }
 
 .esq_senha a:hover{
     text-decoration: underline;
+    transition: all .5s ease;
 }
 
 .linha_01{
@@ -208,28 +233,30 @@ header{
 
 .btn_ajuda{
     padding-top: 20px;
-    padding-left: 50px;
     padding-bottom: 20px;
-    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.btn_ajuda button{
+.btn_ajuda input{
     cursor: pointer;
     outline: revert;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     background-color: #0047D5;
     font-size: 22px;
     font-weight: bolder;
     color: #fff;
     border: solid 1px;
     border-radius: 5px;
+    transition: all .5s ease;
 }
 
-.btn_ajuda button:hover{
+.btn_ajuda input:hover{
     background-color: #002F8E;
+    transition: all .5s ease;
 }
 
 /* Logo CPS */
@@ -246,11 +273,9 @@ header{
 #Contato {
     position: relative;
     display: grid;
-    gap: 5rem;
     justify-content: space-around;
     background-color: #ffffff;
-    padding: 8rem;
-    margin-top: 5rem;
+    padding: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
 
@@ -263,6 +288,7 @@ header{
 .meio-contato h5 {
     font-size: 15px;
     font-weight: 600;
+    padding-bottom: 5px;
     color: #555;
 }
 
@@ -275,4 +301,75 @@ header{
     color: #555;
     font-weight: 600;
     transition: all .35s ease;
+}
+
+.separacao-contato hr{
+    width: 1px;
+    height: 300px;
+}
+
+.icons{
+    display: flex;
+}
+
+.social_icon a{
+    padding-right: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 36px;
+    color: #000;
+    transition: all .5s ease;
+}
+
+.social_icon a:hover{
+    transform: translateY(-5px);
+    transition: all .5s ease;
+    font-size: 48px;
+    transition: all .5s ease;
+}
+
+.vesti-etec a{
+    transition: all .5s ease;
+}
+
+.vesti-etec a:hover{
+    color: red;
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.vesti-fatec a:hover{
+    color: rgb(0, 110, 255);
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.web-sai a:hover{
+    color: rgb(255, 123, 0);
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.inova-cps a:hover{
+    color: rgb(0, 255, 136);
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.email-insti a:hover{
+    color: rgb(17, 0, 255);
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.email a:hover{
+    color: rgb(255, 0, 149);
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.suporte a:hover{
+    color: indigo;
+    font-size: 18px;
+    transition: all .5s ease;
 }
