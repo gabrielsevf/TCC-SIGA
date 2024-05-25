@@ -8,15 +8,6 @@
     list-style: none;
 }
 
-:root{
-    --bg-color: var(--bg-color) #F0EFEA;
-    --text-color: #000;
-    --main-color: #FF0000;
-    --other-color: #1C1C1C;
-    --h1-font: 4rem;
-    --p-font: 1rem;
-}
-
 body{
     background-color: #F0EFEA;
 }
@@ -215,6 +206,7 @@ header{
 }
 
 .btn_entrar input{
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     outline: revert;
     height: 45px;
@@ -265,6 +257,7 @@ header{
 }
 
 .btn_ajuda input{
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     outline: revert;
     padding-top: 10px;
@@ -281,7 +274,7 @@ header{
 }
 
 .btn_ajuda input:hover{
-    background-color: #002F8E;
+    background-color: #002369;
     transition: all .5s ease;
 }
 
