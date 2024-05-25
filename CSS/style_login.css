@@ -8,6 +8,15 @@
     list-style: none;
 }
 
+:root{
+    --bg-color: var(--bg-color) #F0EFEA;
+    --text-color: #000;
+    --main-color: #FF0000;
+    --other-color: #1C1C1C;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
 body{
     background-color: #F0EFEA;
 }
@@ -92,7 +101,7 @@ header{
 
 .header-login a:link{
     text-decoration: none;
-    color: #FFF;    
+    color: #FFF;
 }
 
 .header-login a:hover{
@@ -111,6 +120,23 @@ header{
 .header-login a:visited:hover{
     color: #000;
     transition: all .5s ease;
+}
+
+.header-login-icons a:hover{
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.header-login-icons a:active{
+    color: #FFF;
+}
+
+.header-login-icons a:visited{
+    color: #FFF;
+}
+
+.header-login-icons a:visited:hover{
+    color: #000;
 }
 
 /* Forms */
@@ -276,6 +302,8 @@ header{
     justify-content: space-around;
     background-color: #ffffff;
     padding: 3rem;
+    padding: 5rem;
+    margin-top: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
 
@@ -336,6 +364,10 @@ header{
     color: red;
     font-size: 18px;
     transition: all .5s ease;
+}
+
+.vesti-etec a:hover{
+    color: red;
 }
 
 .vesti-fatec a:hover{
