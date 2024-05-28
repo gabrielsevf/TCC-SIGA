@@ -1,0 +1,350 @@
+/* All */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #F0EFEA;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header */
+#Cabecalho{
+    background-image: linear-gradient(to right, rgb(143, 0, 0), rgb(173, 0, 0));
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 97px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    text-align: left;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-itens{
+    cursor: pointer;
+    padding-top: 65px;
+    margin: 0px auto;
+}
+
+.nav-itens ul{
+    width: 200px;
+}
+
+.nav-itens li{
+    width: 200px;
+}
+
+.nav-itens p{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.nav-itens i{
+    padding-left: 5px;
+}
+
+.nav-itens:hover p{
+    color: #000;
+    transition: all .5s ease;
+}
+
+.nav-itens:hover i{
+    color: #000;
+    transition: all .5s ease;
+}
+
+/* Esconder e Mostrar elementos*/
+.nav-itens:hover .nav-sub-itens{
+    display: grid;
+    position: absolute;
+    left: auto;
+    top: 100%;
+    background-color: #FFF;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FFF;
+    border-width: 0px;
+}
+
+
+.nav-sub-itens{
+    display: none;
+}
+
+.nav-sub-itens a{
+    align-items: left;
+    text-align: left;
+    font-weight: bold;
+    padding: 0;
+}
+
+.nav-sub-itens ul li{
+    padding: 1rem;
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    transition: all .5s ease;
+}
+
+.nav-sub-itens li:hover{
+    background-color: rgb(153, 0, 0);
+    color:#FFF;
+    transition: all .5s ease;
+}
+
+/* Options */
+.header-options{
+    margin-left: auto;
+    margin-right: 10%;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    height: 97px;
+}
+
+.option-itens{
+    cursor: pointer;
+    padding-top: 65px;
+    height: 97px;
+}
+
+.option-itens ul{
+    width: 100px;
+}
+
+.option-itens li{
+    width: 100px;
+}
+
+.option-itens p{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.option-itens i{
+    padding-left: 5px;
+}
+
+.option-itens:hover p{
+    color: #000;
+    transition: all .5s ease;
+}
+
+.option-itens:hover i{
+    color: #000;
+    transition: all .5s ease;
+}
+
+/* Esconder e Mostrar elementos*/
+.option-itens:hover .option-sub-itens{
+    display: grid;
+    position: absolute;
+    left: auto;
+    top: 100%;
+    background-color: #FFF;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FFF;
+    border-width: 0px;
+}
+
+
+.option-sub-itens{
+    display: none;
+}
+
+.option-sub-itens a{
+    align-items: right;
+    text-align: right;
+    font-weight: bold;
+    padding: 0;
+}
+
+.option-sub-itens ul li{
+    padding: 1rem;
+    align-items: center;
+    text-align: right;
+    font-weight: bold;
+    color: #000;
+    transition: all .5s ease;
+}
+
+.option-sub-itens li:hover{
+    background-color: #990000;
+    color:#FFF;
+    transition: all .5s ease;
+}
+/* Header */
+
+#Sobre{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-site{
+    display: grid;
+    background-color: #FFF;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.sobre-titulo h2{
+    padding-top: 1rem;
+}
+
+.sobre-texto p{
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sobre-texto a{
+    cursor: pointer;
+    color: #0000ff;
+}
+
+.sobre-texto a:hover{
+    color: #000097;
+    text-decoration: underline;
+}
+
+.sobre-site hr{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin-right: 10%;
+}
+
+.sobre-desenv{
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Fim pág */
+#Contato {
+    position: relative;
+    display: grid;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 3rem;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+    color: #000000;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #555;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.icons{
+    display: flex;
+}
+
+.social_icon a{
+    padding-right: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 36px;
+    color: #000;
+    transition: all .5s ease;
+}
+
+.social_icon a:hover{
+    transform: translateY(-5px);
+    transition: all .5s ease;
+    font-size: 48px;
+    transition: all .5s ease;
+}
+
+.vesti-etec a{
+    transition: all .5s ease;
+}
+
+.vesti-etec a:hover{
+    color: red;
+    transition: all .5s ease;
+}
+
+.vesti-fatec a:hover{
+    color: rgb(0, 110, 255);
+    transition: all .5s ease;
+}
+
+.web-sai a:hover{
+    color: rgb(255, 123, 0);
+    transition: all .5s ease;
+}
+
+.inova-cps a:hover{
+    color: rgb(0, 255, 136);
+    transition: all .5s ease;
+}
+
+.email-insti a:hover{
+    color: rgb(17, 0, 255);
+    transition: all .5s ease;
+}
+
+.email a:hover{
+    color: rgb(255, 0, 149);
+    transition: all .5s ease;
+}
+
+.suporte a:hover{
+    color: indigo;
+    transition: all .5s ease;
+}
