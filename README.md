@@ -9,7 +9,7 @@
   Visão Geral do Projeto
 </h2>
 <p>
-	O siga é um website desenvolvido em HTML, CSS e Javascript, que permite aos usuários     verem suas notas escolares, sua frequência escolar e informações escolares. O aplicativo fornece uma interface mais simples e facilidade em visualização de dados.
+	O siga é um website desenvolvido em HTML, CSS, Javascript, PHP e Sql que permite aos usuários     verem suas notas escolares, sua frequência escolar e informações escolares. O aplicativo fornece uma interface mais simples e facilidade em visualização de dados.
 </p>
 <h2>
   Funcionalidades Principais
