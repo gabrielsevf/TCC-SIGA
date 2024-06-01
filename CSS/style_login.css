@@ -233,46 +233,22 @@ html{
     display: grid;
 }
 
-.lbl_user{
-    padding-top: 20px;
+.label{
+    padding-top: 1rem;
     padding-left: 50px;
 }
 
-.lbl_user label{
+.label label{
     font-size: 16px;
     padding-bottom: 5px;
 }
 
-.ipt_user{
+.input{
     padding-left: 50px;
-    padding-bottom: 10px;
     padding-right: 50px;
 }
 
-.ipt_user input{
-    padding-top: 7px;
-    padding-left: 3px;
-    padding-bottom: 7px;
-    width: 100%;
-    align-items: center;
-}
-
-.lbl_pwd{
-    padding-left: 50px;
-}
-
-.lbl_pwd label{
-    font-size: 16px;
-    padding-bottom: 5px;
-}
-
-.ipt_pwd{
-    padding-left: 50px;
-    padding-bottom: 15px;
-    padding-right: 50px;
-}
-
-.ipt_pwd input{
+.input input{
     padding-top: 7px;
     padding-left: 3px;
     padding-bottom: 7px;
@@ -281,6 +257,7 @@ html{
 }
 
 .btn_entrar{
+    padding-top: 1rem;
     padding-left: 50px;
     padding-bottom: 20px;
     padding-right: 50px;

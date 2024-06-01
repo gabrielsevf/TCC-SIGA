@@ -7,6 +7,6 @@ document.getElementById("LoginForm").addEventListener("submit", function(event) 
     if (username === "aluno" && password === "123") {
         window.location.href = "aluno.html";
         } else {
-            alert("Usuário ou senha incorretos para aluno.");
+            alert("Usuário ou senha está incorreto.");
         }
 });
