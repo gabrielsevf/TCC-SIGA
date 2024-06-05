@@ -1,0 +1,77 @@
+/* Perfil */
+#Perfil{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.perfil{
+    display: grid;
+    margin: auto;
+    background-color: #ffffff;
+    width: 50%;
+    height: 60%;
+    border: solid 0px #000;
+    border-radius: 10px;
+}
+
+.img_perfil{
+    display: flex;
+    margin: auto;
+}
+
+.img_perfil img{
+    border-radius: 180px;
+}
+
+.info_perfil{
+    display: grid;
+    margin: auto;
+}
+.perfil_itens{
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.item_text{
+    color: black;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+#NOME_ALUNO{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#RM_ALUNO{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#RA_ALUNO{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#EMAIL_INSTI_ALUNO{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cursos{
+    display: flex;
+}
+
+#CURSO_ALUNO{
+    color: #000;
+    font-weight: 600;
+}
+/* Perfil */

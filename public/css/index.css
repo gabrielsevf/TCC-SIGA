@@ -1,0 +1,152 @@
+/* Esconder Nav Bar */
+.navbar{
+    visibility: hidden;
+}
+/* Esconder Nav Bar */
+
+/* Forms Login */
+#Login{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+/* Id LoginForm */
+#LoginForm{
+    border-width: 4px;
+    border-style: solid;
+    background-color: #FFF;
+    border-color: #c9c9c9;
+    border-radius: 10px;
+    text-align: left;
+    display: grid;
+}
+/* Id LoginForm */
+
+/* Elementos Geral Forms */
+.label{
+    padding-top: 1rem;
+    padding-left: 50px;
+}
+
+.label label{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.input{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.input input{
+    padding-top: 7px;
+    padding-left: 3px;
+    padding-bottom: 7px;
+    width: 100%;
+    align-items: center;
+}
+/* Elementos Geral Forms */
+
+/* Btn Entrar */
+.btn_entrar{
+    padding-top: 1rem;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+.btn_entrar input{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: revert;
+    height: 45px;
+    width: 100%;
+    background-color: #0da000;
+    font-size: 22px;
+    font-weight: bolder;
+    line-height: 45px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    border: solid 1px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.btn_entrar input:hover{
+    background-color: #0a7500;
+    transition: all .5s ease;
+}
+/* Btn Entrar */
+
+/* Esq Senha */
+.esq_senha{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.esq_senha a{
+    color: #2f00c9;
+    transition: all .5s ease;
+}
+
+.esq_senha a:hover{
+    text-decoration: underline;
+    transition: all .5s ease;
+}
+/* Esq Senha */
+
+/* Linha 01 */
+.linha_01{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* Linha 01 */
+
+/* Btn Ajuda */
+.btn_ajuda{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn_ajuda input{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: revert;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #0047D5;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    border: solid 1px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.btn_ajuda input:hover{
+    background-color: #002369;
+    transition: all .5s ease;
+}
+/* Btn Ajuda */
+/* Forms Login */
+
+/* Logo CPS */
+.logo-cps img{
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    bottom: 10px;
+    right: 20px;
+}
+/* Logo CPS */

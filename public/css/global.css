@@ -1,0 +1,348 @@
+/* Arquivo CSS GLOBAL */
+
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Estilos globais para todos os elementos */
+/* Define a fonte padrão para todos os elementos */
+/* Remove margens e preenchimentos padrão e define a caixa de modelagem de borda */
+/* Remove decoração de texto e estilo de lista padrão */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* Fim dos estilos globais */
+
+/* Estilos específicos para o corpo do documento */
+body {
+    background-color: #F0EFEA; /* Define a cor de fundo do corpo */
+}
+
+/* Define o comportamento de rolagem suave para o HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para o cabeçalho */
+#Cabecalho {
+    background-image: linear-gradient(to right, #8f0000, #ad0000); /* Define um degradê de fundo */
+    position: fixed; /* Define a posição fixa para que o cabeçalho permaneça no topo da página */
+    top: 0;
+    right: 0;
+    z-index: 1000; /* Define uma ordem de empilhamento alta para garantir que o cabeçalho esteja na parte superior */
+    height: 97px; /* Define a altura do cabeçalho */
+    width: 100%; /* Define a largura do cabeçalho */
+    display: grid; /* Usa o modelo de layout de grade para o cabeçalho */
+    grid-template-columns: repeat(3, 1fr); /* Divide o cabeçalho em três colunas de largura igual */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+/* Fim dos estilos para o cabeçalho */
+
+/* Estilos para o logotipo */
+.logo {
+    display: flex; /* Usa o modelo de layout flexível para o logotipo */
+    margin-top: auto; /* Alinha o logotipo ao centro verticalmente */
+    margin-bottom: auto;
+    margin-left: 10%; /* Define uma margem à esquerda */
+    text-align: left; /* Alinha o texto do logotipo à esquerda */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+/* Fim dos estilos para o logotipo */
+
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex; /* Usa o modelo de layout flexível para a barra de navegação */
+    margin-left: auto; /* Alinha a barra de navegação à direita */
+    margin-right: auto; /* Alinha a barra de navegação à esquerda */
+    padding-top: 65px; /* Adiciona espaço superior */
+}
+/* Fim dos estilos para a barra de navegação */
+
+/* Estilos para os itens de navegação */
+.nav-itens {
+    cursor: pointer; /* Define o cursor do mouse como ponteiro */
+    height: 10%; /* Define a altura dos itens de navegação */
+}
+
+.nav-itens ul {
+    width: 200px; /* Define a largura da lista de itens de navegação */
+}
+
+.nav-itens li {
+    width: 200px; /* Define a largura dos itens de navegação */
+}
+
+.nav-itens p {
+    color: #FFF; /* Define a cor do texto */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    width: 200px; /* Define a largura do texto */
+    height: 32px; /* Define a altura do texto */
+}
+
+.nav-itens i {
+    padding-left: 5px; /* Adiciona um pequeno espaço à esquerda do ícone */
+}
+
+.nav-itens p:hover,
+.nav-itens i:hover {
+    color: #000; /* Altera a cor do texto ao passar o mouse */
+    transition: all .5s ease; /* Adiciona uma transição suave */
+}
+/* Fim dos estilos para os itens de navegação */
+
+/* Esconder e Mostrar elementos*/
+.nav-itens:hover .nav-sub-itens {
+    display: grid; /* Mostra os subitens quando o mouse está sobre os itens de navegação */
+    position: absolute; /* Define a posição absoluta para os subitens */
+    width: 200px; /* Define a largura dos subitens */
+    left: auto; /* Alinha os subitens à esquerda */
+    top: 100%; /* Alinha os subitens abaixo dos itens de navegação */
+    background-color: #FFF; /* Define a cor de fundo dos subitens */
+    border-style: solid; /* Define o estilo da borda dos subitens */
+    border-radius: 5px; /* Adiciona um leve arredondamento às bordas dos subitens */
+    border-color: #FFF; /* Define a cor da borda dos subitens */
+    border-width: 0px; /* Define a largura da borda dos subitens */
+}
+
+.nav-sub-itens {
+    display: none; /* Inicialmente, os subitens estão ocultos */
+}
+/* Fim do Esconder e Mostrar elementos*/
+
+/* Estilos para os subitens de navegação */
+.nav-sub-itens a {
+    width: 200px; /* Define a largura dos subitens */
+    align-items: left; /* Alinha os subitens à esquerda */
+    text-align: left; /* Alinha o texto dos subitens à esquerda */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    padding: 0; /* Remove o preenchimento dos subitens */
+}
+
+.nav-sub-itens ul {
+    width: 200px; /* Define a largura da lista de subitens */
+}
+
+.nav-sub-itens ul li {
+    width: 200px; /* Define a largura dos subitens */
+    padding: 1rem; /* Adiciona preenchimento aos subitens */
+    align-items: center; /* Alinha os subitens ao centro verticalmente */
+    text-align: left; /* Alinha o texto dos subitens à esquerda */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: #000; /* Define a cor do texto dos subitens */
+    transition: all .5s ease; /* Adiciona uma transição suave aos subitens */
+}
+
+.nav-sub-itens li:hover {
+    background-color: rgb(153, 0, 0); /* Altera a cor de fundo dos subitens ao passar o mouse */
+    color: #FFF; /* Altera a cor do texto dos subitens ao passar o mouse */
+    transition: all .5s ease; /* Adiciona uma transição suave aos subitens */
+}
+/* Fim dos estilos para os subitens de navegação */
+
+/* Estilos para as opções do cabeçalho */
+.header-options {
+    display: flex; /* Usa o modelo de layout flexível para as opções do cabeçalho */
+    margin-left: auto; /* Alinha as opções do cabeçalho à esquerda */
+    margin-right: 10%; /* Adiciona uma margem à direita das opções do cabeçalho */
+    padding-top: 65px; /* Adiciona espaço superior às opções do cabeçalho */
+}
+
+.option-itens {
+    cursor: pointer; /* Define o cursor do mouse como ponteiro */
+    height: 10%; /* Define a altura das opções do cabeçalho */
+}
+
+.option-itens p {
+    color: #FFF; /* Define a cor do texto das opções do cabeçalho */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    width: 100px; /* Define a largura do texto das opções do cabeçalho */
+    height: 32px; /* Define a altura do texto das opções do cabeçalho */
+}
+
+.option-itens i {
+    padding-left: 5px; /* Adiciona um pequeno espaço à esquerda do ícone */
+}
+
+.option-itens p:hover,
+.option-itens i:hover {
+    color: #000; /* Altera a cor do texto das opções do cabeçalho ao passar o mouse */
+    transition: all .5s ease; /* Adiciona uma transição suave */
+}
+/* Fim dos estilos para as opções do cabeçalho */
+
+/* Mostrar e ocultar subitens ao passar o mouse */
+.option-itens:hover .option-sub-itens {
+    display: grid; /* Mostra os subitens ao passar o mouse sobre as opções do cabeçalho */
+    position: absolute; /* Define a posição absoluta para os subitens */
+    left: auto; /* Alinha os subitens à esquerda */
+    top: 100%; /* Alinha os subitens abaixo das opções do cabeçalho */
+    background-color: #FFF; /* Define a cor de fundo dos subitens */
+    border-style: solid; /* Define o estilo da borda dos subitens */
+    border-radius: 5px; /* Adiciona um leve arredondamento às bordas dos subitens */
+    border-color: #FFF; /* Define a cor da borda dos subitens */
+    border-width: 0px; /* Define a largura da borda dos subitens */
+}
+
+.option-sub-itens {
+    display: none; /* Inicialmente, os subitens estão ocultos */
+}
+/* Fim do Mostrar e ocultar subitens ao passar o mouse */
+
+/* Estilos para os subitens das opções do cabeçalho */
+.option-sub-itens a {
+    align-items: right; /* Alinha os subitens à direita */
+    text-align: right; /* Alinha o texto dos subitens à direita */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    padding: 0; /* Remove o preenchimento dos subitens */
+}
+
+.option-sub-itens ul{
+    padding: 0; /* Remove qualquer preenchimento padrão da lista */
+}
+
+.option-sub-itens ul li {
+    width: 100px; /* Define a largura dos itens */
+    height: 50px; /* Define a altura dos itens */
+    color: #000; /* Mantém a cor do texto preta */
+    background-color: #FFF; /* Mantém o fundo branco */
+    transition: all .5s ease; /* Adiciona uma transição suave */
+    text-align: center;
+    align-items: center;
+}
+
+.option-sub-itens li:hover {
+    background-color: #990000; /* Altera a cor de fundo dos subitens ao passar o mouse */
+    color: #FFF; /* Altera a cor do texto dos subitens ao passar o mouse */
+    transition: all .5s ease; /* Adiciona uma transição suave aos subitens */
+}
+
+.option-sub-itens button{
+    cursor: pointer;
+    width: 100px; /* Define a largura dos itens */
+    height: 50px; /* Define a altura dos itens */
+    color: #000; /* Mantém a cor do texto preta */
+    background-color: #FFF; /* Mantém o fundo branco */
+    transition: all .5s ease; /* Adiciona uma transição suave */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os textos à direita */
+    border: none;
+    background: none;
+}
+
+.option-sub-itens button:hover{
+    background-color: #990000; /* Altera a cor de fundo do botão ao passar o mouse */
+    color: #FFF; /* Altera a cor do texto do botão ao passar o mouse */
+}
+
+/* Fim dos estilos para os subitens das opções do cabeçalho */
+
+/* Estilos para o rodapé de contato */
+#Contato {
+    position: relative; /* Define a posição relativa para os elementos filhos */
+    display: grid; /* Usa o modelo de layout de grade para o contêiner de contato */
+    justify-content: space-around; /* Alinha os elementos horizontalmente com espaçamento uniforme */
+    background-color: #ffffff; /* Define a cor de fundo do contêiner de contato */
+    padding: 3rem; /* Adiciona preenchimento interno ao contêiner de contato */
+    margin-top: 1rem; /* Adiciona uma margem superior ao contêiner de contato */
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Define as colunas da grade para se ajustarem automaticamente e terem no mínimo 200px de largura */
+}
+
+/* Estilos gerais para elementos de contato */
+.meio-contato h3 {
+    color: #000000; /* Define a cor do texto dos cabeçalhos */
+    font-size: 23px; /* Define o tamanho da fonte dos cabeçalhos */
+    margin-bottom: 1.6rem; /* Adiciona margem inferior aos cabeçalhos */
+}
+
+.meio-contato h5 {
+    font-size: 15px; /* Define o tamanho da fonte dos subtítulos */
+    font-weight: 600; /* Define o peso da fonte como negrito */
+    padding-bottom: 5px; /* Adiciona preenchimento inferior aos subtítulos */
+    color: #555; /* Define a cor do texto dos subtítulos */
+}
+
+.meio-contato li {
+    margin-bottom: 15px; /* Adiciona margem inferior aos itens da lista */
+}
+
+.meio-contato li a {
+    display: block; /* Define os links como blocos para ocuparem a largura total */
+    color: #555; /* Define a cor do texto dos links */
+    font-weight: 600; /* Define o peso da fonte como negrito */
+    transition: all .35s ease; /* Adiciona uma transição suave aos links */
+}
+/* Fim dos estilos gerais para elementos de contato */
+
+/* Estilos para os ícones sociais */
+.icons {
+    display: flex; /* Usa o modelo de layout flexível para os ícones sociais */
+}
+
+.social_icon a {
+    padding-right: 1rem; /* Adiciona preenchimento à direita dos ícones sociais */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro */
+    display: inline-flex; /* Define os ícones sociais como elementos de linha */
+    font-size: 36px; /* Define o tamanho da fonte dos ícones sociais */
+    color: #000; /* Define a cor dos ícones sociais */
+    transition: all .5s ease; /* Adiciona uma transição suave aos ícones sociais */
+}
+
+.social_icon a:hover {
+    transform: translateY(-5px); /* Move os ícones sociais para cima ao passar o mouse sobre eles */
+    font-size: 48px; /* Aumenta o tamanho da fonte dos ícones sociais ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos ícones sociais */
+}
+/* Fim dos estilos para os ícones sociais */
+
+/* Estilos para os links dos sites da CPS */
+.vesti-etec a {
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+
+.vesti-etec a:hover {
+    color: red; /* Altera a cor do texto dos links ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+
+.vesti-fatec a:hover {
+    color: rgb(0, 110, 255); /* Altera a cor do texto dos links ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+
+.web-sai a:hover {
+    color: rgb(255, 123, 0); /* Altera a cor do texto dos links ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+
+.inova-cps a:hover {
+    color: rgb(0, 255, 136); /* Altera a cor do texto dos links ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+
+.email-insti a:hover {
+    color: rgb(17, 0, 255); /* Altera a cor do texto dos links ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+/* Fim dos estilos para os links dos sites da CPS */
+
+/* Estilos para os links de contato */
+.email a:hover {
+    color: rgb(255, 0, 149); /* Altera a cor do texto dos links de e-mail ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+
+.suporte a:hover {
+    color: indigo; /* Altera a cor do texto dos links de suporte ao passar o mouse sobre eles */
+    transition: all .5s ease; /* Adiciona uma transição suave aos links */
+}
+/* Fale Conosco */
+/* Fim dos estilos para os links de suporte */
+
+/* Fim do rodapé de contato */
+
+/* Arquivo CSS GLOBAL */

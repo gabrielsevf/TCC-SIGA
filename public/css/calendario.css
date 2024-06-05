@@ -1,0 +1,49 @@
+#Calendario {
+    display: flex; /* Usa o modelo de layout flexível para o elemento com ID "Calendario" */
+    height: 100vh; /* Define a altura do elemento para ocupar 100% da altura da janela do navegador */
+    width: 100%; /* Define a largura do elemento para ocupar 100% da largura da janela do navegador */
+    position: relative; /* Define a posição do elemento como relativa em relação ao seu contexto */
+    align-items: center; /* Alinha os itens verticalmente ao centro dentro do elemento */
+}
+
+.calendario {
+    width: 400px; /* Define a largura do calendário interno */
+    margin: 20px auto; /* Centraliza o calendário horizontalmente com margens superior e inferior de 20px */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida cinza ao redor do calendário */
+    border-radius: 5px; /* Adiciona um leve arredondamento às bordas do calendário */
+    padding: 10px; /* Adiciona um preenchimento interno ao redor do conteúdo do calendário */
+}
+
+.cabecalho {
+    display: flex; /* Usa o modelo de layout flexível para o cabeçalho */
+    justify-content: space-between; /* Distribui o espaço entre os elementos do cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-bottom: 10px; /* Adiciona espaço entre o cabeçalho e os dias da semana */
+}
+
+.dias-semana {
+    display: flex; /* Usa o modelo de layout flexível para os dias da semana */
+    justify-content: space-between; /* Distribui o espaço entre os elementos dos dias da semana */
+    margin-bottom: 10px; /* Adiciona espaço entre os dias da semana e os dias do mês */
+}
+
+.dias-semana div {
+    width: calc(100% / 7); /* Define a largura de cada dia da semana igualmente */
+    text-align: center; /* Centraliza o texto dentro de cada dia da semana */
+}
+
+.dias {
+    display: grid; /* Usa o modelo de layout de grade para os dias do mês */
+    grid-template-columns: repeat(7, 1fr); /* Cria 7 colunas iguais */
+    gap: 5px; /* Adiciona espaço entre os dias */
+}
+
+.dias div {
+    text-align: center; /* Centraliza o texto dentro de cada dia */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida cinza ao redor de cada dia */
+    padding: 5px; /* Adiciona um preenchimento interno dentro de cada dia */
+}
+
+#mes-ano {
+    font-size: 25px; /* Define o tamanho da fonte para o elemento com ID "mes-ano" */
+}
